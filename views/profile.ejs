@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+    <title>Coffee App</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">  
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1>Coffee Orders</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+        <!-- LOCAL INFORMATION -->
+        <div class="col-sm-6">
+            <!-- <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+
+                
+              
+
+
+                    <a href="/unlink/local" class="btn btn-default">Unlink</a>
+               
+                    <a href="/connect/local" class="btn btn-default">Connect Local</a>
+              
+
+            </div> -->
+        </div>
+
+        <div class="col-sm-6">
+
+          <h2> Active Orders </h2>
+          <ul class="quotes">
+        
+             
+            <% for(var i=0; i<orders.length; i++) {%>
+              <% if (orders[i].completed === false) { %>
+              <li class="message">
+                <p><%= orders[i].sendOrder %></p> <span><i id="<%= orders[i]._id %>" class="fa fa-check" aria-hidden="true"></i></span>
+                <p class="hide"><%= orders[i]._id %> </p>
+                <!-- <span><i class="fa fa-trash" aria-hidden="true"></i></span> -->
+              </li>
+            <% } %>
+            <% } %>
+         </ul> 
+         <h2> Completed Orders</h2>
+         <ul class="completed">
+           
+          <% for(var i=0; i<orders.length; i++) {%>
+             <% if (orders[i].completed) { %>
+            <li class="message">
+              <p><%= orders[i].sendOrder %></p>
+              <p><span> Completed By: </span><%= orders[i].barista %></p>
+              <p class="hide"><%= orders[i]._id %></p>
+              <span><i class="fa fa-trash" aria-hidden="true"></i></span>
+            </li>
+          <% } %>
+          <% } %>
+       </ul> 
+        </div>
+</div>
+
+<script src="https://kit.fontawesome.com/d3cfcd7d11.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

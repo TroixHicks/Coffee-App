@@ -1,0 +1,79 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  color: rgb(189, 135, 0);
+  
+}
+img{
+  height: 200px;
+}
+
+body{
+  background-image: url(coffee.png);
+  background-size: cover;
+}
+
+.jumbotron{
+  background-color: blanchedalmond;
+  font-family: monospace;
+  box-shadow: 10px 5px 5px rgb(138, 100, 4);
+}
+
+h2{
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-weight: 800;
+}
+
+.col-sm-6{
+  background-color: blanchedalmond;
+  height: auto;
+  border-radius: 10px;
+  border-color: black;
+}
+div.container{
+  border-color: black;
+}
+li{
+  list-style: none;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+.title{
+  position: relative;
+  right: 400px;
+  top: 100px;
+} 
+
+button{
+  background-color: white;
+  border: 1px solid blanchedalmond;
+}
+
+h1{
+  font-size: 60px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-weight: 800;
+  background-color: white;
+  height:100px;
+  width: 50%;
+  position: relative;
+  left: 250px;
+  padding-top: 10px;
+  box-shadow: 10px 5px 5px rgb(189, 135, 0);
+}
+
+.top{
+  position: relative;
+  text-align: center;
+}
+
+input{
+  position: relative;
+  left: 400px;
+  margin-top: 20px;
+  bottom: 100px;
+  text-align: center;
+}
+
+button{
+  box-shadow: 10px 5px 5px rgb(189, 135, 0);
+}

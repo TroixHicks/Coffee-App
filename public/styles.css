@@ -1,0 +1,45 @@
+body{
+    background-image: url(coffee.png);
+    background-size: cover;
+    font-family: monospace;
+}
+
+ul {
+    width: 100%;
+}
+  
+li{
+    width: 45%;
+    height: 150px;
+    display: inline-block;
+    border: 1px solid transparent;
+    list-style: none;
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+.row{
+    background-color: blanchedalmond;
+}
+
+.col-sm-6{
+ width: 100%;
+}
+ul.completed{
+    float: left;
+   
+}
+
+li.message{
+    margin-bottom:10px;
+    background-color: whitesmoke;
+    box-shadow: 10px 5px 5px rgb(189, 135, 0);
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Zen Kurenaido', sans-serif;
+}
